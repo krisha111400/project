@@ -49,3 +49,44 @@ LCMP/
 ├── Creator/
 ├── Common Files/
 └── database/
+
+
+
+---
+
+## 🌐 Live Demo
+🔗 **Live Project:**  
+https://lcmp.infinityfreeapp.com
+
+> *(Hosted using free hosting for demonstration purposes)*
+
+---
+
+## 📷 Screenshots
+*(Add screenshots of Login, Dashboard, Campaign page here)*
+
+---
+
+## 🎯 Purpose of the Project
+- Help local brands find relevant creators
+- Provide creators with paid collaboration opportunities
+- Learn real-world PHP project structure
+- Demonstrate full-stack web development skills
+
+---
+
+## 👩‍💻 Developed By
+**Krishna Patel**  
+BCA Student | Web Development Enthusiast  
+
+- 🔗 GitHub: https://github.com/krisha111400  
+- 🔗 LinkedIn: https://www.linkedin.com/in/krishna-patel-b58256381
+
+---
+
+## 📜 License
+This project is created for **educational purposes** and personal portfolio use.
+
+
+
+
