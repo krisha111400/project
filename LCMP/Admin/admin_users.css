@@ -1,0 +1,198 @@
+/* ---------------- Reset ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+    height: 60px;
+    background-color: white;
+    color: rgb(32,27,71);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-logo {
+    background-size: cover;
+    height: 50px;
+    margin-right: 500px;
+    align-items: center;
+}
+
+.nav-logo h4 {
+    color: grey;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.nav-logo h3 {
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Navbar links */
+.nav-Home, .nav-Creator, .nav-Campaigns, .nav-About, .nav-Contact, .nav-Login {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-size: 1.50rem;
+}
+
+.nav-Home a, .nav-Creator a, .nav-Campaigns a, .nav-About a, .nav-Contact a, .nav-Login a {
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-Home a:hover,
+.nav-Creator a:hover,
+.nav-Campaigns a:hover,
+.nav-About a:hover,
+.nav-Contact a:hover,
+.nav-Login a:hover {
+    color: #49a9de;
+}
+
+/* ---------------- Sidebar ---------------- */
+.sidebar {
+    width: 220px;
+    background-color: #34495e;
+    color: white;
+    position: fixed;
+    top: 60px; /* below navbar */
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background-color: #1abc9c;
+}
+
+/* Logout button at bottom */
+.sidebar a.logout {
+    margin-top: auto;
+    background-color: #e74c3c;
+    text-align: center;
+}
+
+/* ---------------- Main Content ---------------- */
+.main-content {
+    margin-left: 240px; /* sidebar width + gap */
+    padding: 80px 30px 30px 30px; /* top padding for navbar */
+    background-color: #f4f6f9;
+    min-height: 100vh;
+}
+
+.main-content h1 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* ---------------- Users Table ---------------- */
+.campaign-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.campaign-table th,
+.campaign-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.campaign-table th {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.campaign-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #3498db;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ---------------- Responsive ---------------- */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding: 10px;
+    }
+    .sidebar a span {
+        display: none;
+    }
+    .main-content {
+        margin-left: 70px;
+        padding: 80px 15px 15px 15px;
+    }
+    .campaign-table th, .campaign-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

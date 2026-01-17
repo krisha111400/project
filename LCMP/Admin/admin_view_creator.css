@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.back-btn {
+    text-decoration: none;
+    background: #0d6efd;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background: #0b5ed7;
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   ROWS
+========================= */
+.row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.row label {
+    font-weight: 600;
+    color: #555;
+}
+
+.row span a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.row span a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   STATUS BADGE
+========================= */
+.status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.status.active {
+    background: #e6f4ea;
+    color: #198754;
+}
+
+.status.blocked {
+    background: #fdecea;
+    color: #dc3545;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .row label {
+        font-size: 13px;
+    }
+}

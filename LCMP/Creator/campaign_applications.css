@@ -1,0 +1,69 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #27ae60;
+  margin-bottom: 20px;
+}
+
+.message {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message:contains("✅") {
+  background: #eafaf1;
+  color: #27ae60;
+  border: 1px solid #27ae60;
+}
+
+.message:contains("⚠") {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.message:contains("❌") {
+  background: #fdecea;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+.campaign-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.campaign-table th, .campaign-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.campaign-table th {
+  background: #27ae60;
+  color: #fff;
+}
+
+.apply-btn {
+  background: #27ae60;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #219150;
+}

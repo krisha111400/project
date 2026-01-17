@@ -1,0 +1,148 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f7fb;
+    color: #222;
+}
+
+/* =========================
+   LOGIN BOX
+========================= */
+.Login-Box {
+    background: #fff;
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   TITLE
+========================= */
+.Login {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.Login h2 {
+    font-size: 1.8rem;
+    color: #20204a;
+}
+
+/* =========================
+   FORM
+========================= */
+.Form-Section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Form-Section label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444;
+}
+
+/* =========================
+   INPUTS & SELECT
+========================= */
+.Form-Section input,
+.Form-Section select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.Form-Section input:focus,
+.Form-Section select:focus {
+    border-color: #e5533d;
+    outline: none;
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+.Form-Section button {
+    height: 50px;
+    background: #e5533d;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.Form-Section button:hover {
+    background: #cc4a36;
+}
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+.forgot-password {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.forgot-password a {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #e5533d;
+    border: 1.5px solid #e5533d;
+    border-radius: 8px;
+    text-decoration: none;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.forgot-password a:hover {
+    background: #e5533d;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(229, 83, 61, 0.35);
+}
+
+/* =========================
+   REGISTER LINK
+========================= */
+.register-link {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.register-link a {
+    color: #e5533d;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+    transition: 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #cc4a36;
+    text-decoration: underline;
+}
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+.Form-Section p {
+    font-size: 0.85rem;
+}

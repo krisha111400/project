@@ -1,0 +1,154 @@
+/* ===== GLOBAL ===== */
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    margin:0;
+}
+
+/* ===== PAGE ===== */
+.campaigns-page{
+    max-width:1100px;
+    margin:100px auto 40px;
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.campaigns-page h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2c3e50;
+}
+
+/* ===== CREATE BUTTON ===== */
+.create-btn{
+    display:inline-block;
+    background:#1abc9c;
+    color:#fff;
+    padding:8px 16px;
+    border-radius:6px;
+    font-weight:600;
+    text-decoration:none;
+}
+.create-btn:hover{
+    background:#16a085;
+}
+
+/* ===== TABLE ===== */
+.campaign-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+.campaign-table th,
+.campaign-table td{
+    padding:12px 15px;
+    border-bottom:1px solid #e0e0e0;
+}
+.campaign-table th{
+    background:#f9fafc;
+    font-weight:600;
+}
+.campaign-table tr:hover{
+    background:#f1f1f1;
+}
+
+/* ===== ACTIONS ===== */
+.actions{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+/* ===== BUTTONS ===== */
+.btn{
+    min-width:75px;
+    padding:6px 12px;
+    border-radius:6px;
+    font-size:.85rem;
+    font-weight:600;
+    color:black;
+    text-decoration:none;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    transition:.25s;
+}
+.btn:hover{
+    transform:translateY(-1px);
+    opacity:.9;
+}
+
+.edit-btn{
+    background:linear-gradient(135deg,#3498db,#2980b9);
+}
+.delete-btn{
+    background:linear-gradient(135deg,#e74c3c,#c0392b);
+}
+.apply-btn{
+    background:linear-gradient(135deg,#f39c12,#d35400);
+}
+
+.no-data{
+    text-align:center;
+    padding:20px;
+}
+
+
+
+
+
+
+/* ===== CANCEL APPLICATION BUTTON ===== */
+
+.cancel-btn {
+    background: #ffffff;
+    color: #e74c3c;
+    border: 1.5px solid #e74c3c;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.cancel-btn:hover {
+    background: #e74c3c;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Active (click) */
+.cancel-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(231, 76, 60, 0.25);
+}
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+    .cancel-btn {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+}
+
+
+
+
+
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .actions{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}

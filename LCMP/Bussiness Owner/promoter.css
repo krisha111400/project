@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f6f8ff;
+    color: #1e1e2f;
+}
+
+/* ================= HERO ================= */
+.hero {
+    padding: 140px 20px 80px;
+    text-align: center;
+    background: #f1f4ff;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #e9edff;
+    color: #4a5cff;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.hero h1 span {
+    color: #4a5cff;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* ================= BUTTONS ================= */
+.hero-buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px;
+    display: inline-block;
+}
+
+.primary {
+    background: #2f2aa0;
+    color: white;
+}
+
+.primary:hover {
+    background: #241f85;
+}
+
+.secondary {
+    border: 2px dashed #7a8cff;
+    color: #4a5cff;
+}
+
+.secondary:hover {
+    background: #eef1ff;
+}
+
+/* ================= STATS ================= */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 70px 10%;
+    background: white;
+}
+
+.stat-card {
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.stat-card::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #4a5cff;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+.stat-card h2 {
+    font-size: 2.4rem;
+    color: #4a5cff;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* ================= FLOW SECTION ================= */
+.flow {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+/* Individual Card */
+.flow-item {
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 14px;
+    text-align: center;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect */
+.flow-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+.flow-item h4 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: #1f2a44;
+}
+
+/* Description */
+.flow-item p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Highlight last (solution) card */
+.flow-item:last-child {
+    background: linear-gradient(135deg, #4a5cff, #6b7bff);
+    color: white;
+}
+
+.flow-item:last-child h4,
+.flow-item:last-child p {
+    color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .flow {
+        margin: 60px auto;
+        gap: 20px;
+    }
+
+    .flow-item {
+        padding: 28px 20px;
+    }
+}
+
+
+
+.impact {
+    max-width: 900px;
+    margin: 90px auto;
+    padding: 0 20px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.impact-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 22px 0;
+    border-bottom: 1px solid #e6e9ff;
+    transition: background 0.3s ease;
+}
+
+.impact-row:last-child {
+    border-bottom: none;
+}
+
+/* Keyword (LOCAL, TRUSTED etc.) */
+.impact-row span {
+    min-width: 110px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #4a5cff;
+    font-size: 0.9rem;
+}
+
+/* Description text */
+.impact-row p {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Hover effect */
+.impact-row:hover {
+    background: #f6f8ff;
+    padding-left: 10px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .impact-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .impact-row span {
+        font-size: 0.85rem;
+    }
+
+    .impact-row p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f0f1a;
+    color: #bbb;
+    font-size: 0.9rem;
+}

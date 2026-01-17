@@ -1,0 +1,90 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* LOGO */
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h4 {
+    font-size: 0.9rem;
+    color: grey;
+    margin: 0;
+}
+
+.logo h3 {
+    font-size: 1.3rem;
+    color: rgb(32, 27, 71);
+    margin: 0;
+    font-weight: 700;
+}
+
+/* NAV ITEMS */
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-item i {
+    color: rgb(32, 27, 71);
+    font-size: 0.95rem;
+}
+
+/* LINKS */
+.nav-item a,
+.nav-auth a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: rgb(32, 27, 71);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-item a:hover,
+.nav-auth a:hover {
+    color: #49a9de;
+}
+
+/* AUTH SECTION */
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.nav-auth i {
+    color: rgb(32, 27, 71);
+}
+
+.nav-auth span {
+    font-weight: 500;
+    color: rgb(32, 27, 71);
+}
+
+/* FIX CONTENT UNDER NAVBAR */
+body {
+    padding-top: 70px;
+}

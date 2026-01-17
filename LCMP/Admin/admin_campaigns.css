@@ -1,0 +1,108 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #2c3e50;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 240px;
+  padding: 70px 30px;
+  width: calc(100% - 240px);
+}
+
+.main-content h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background: #2c3e50;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #e0f7fa;
+}
+
+.edit, .delete {
+  text-decoration: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.edit {
+  background: #27ae60;
+}
+
+.edit:hover {
+  background: #219150;
+}
+
+.delete {
+  background: #c0392b;
+}
+
+.delete:hover {
+  background: #922b21;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+
+  table th, table td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  table th, table td {
+    padding: 8px;
+  }
+}
