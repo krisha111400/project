@@ -61,12 +61,6 @@ https://lcmp.infinityfreeapp.com
 > *(Hosted using free hosting for demonstration purposes)*
 
 ---
-
-## 📷 Screenshots
-*(Add screenshots of Login, Dashboard, Campaign page here)*
-
----
-
 ## 🎯 Purpose of the Project
 - Help local brands find relevant creators
 - Provide creators with paid collaboration opportunities
