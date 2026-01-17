@@ -58,7 +58,7 @@ LCMP/
 🔗 **Live Project:**  
 https://lcmp.infinityfreeapp.com
 
-> *(Hosted using free hosting for demonstration purposes)*
+
 
 ---
 ## 🎯 Purpose of the Project
