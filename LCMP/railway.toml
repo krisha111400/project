@@ -1,5 +1,6 @@
+# railway.toml
 [build]
-builder = "NIXPACKS"
+builder = "php"
 
 [deploy]
-startCommand = "cd LCMP && php -S 0.0.0.0:$PORT  index.php"
+start = "php -S 0.0.0.0:$PORT -t ."
