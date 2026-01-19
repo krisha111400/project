@@ -76,7 +76,7 @@ $userType = isset($_SESSION['UserType']) ? strtolower($_SESSION['UserType']) : n
       <!-- HOME -->
       <div class="nav-item">
         <i class="fa-solid fa-house"></i>
-        <a href="../Common Files/Home Page.php">Home</a>
+        <a href="../Common Files/Home_Page.php">Home</a>
       </div>
 
       <!-- PROMOTER / CAMPAIGNS -->
