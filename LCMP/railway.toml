@@ -2,4 +2,4 @@
 builder = "php"
 
 [deploy]
-start = "php -S 0.0.0.0:$PORT -t ."
+start = "php -S 0.0.0.0:$PORT -t LCMP"
